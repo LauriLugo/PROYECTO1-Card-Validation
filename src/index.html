@@ -1,15 +1,40 @@
 <!DOCTYPE html>
- <!-- https://laurilugo.github.io/PROYECTO1-card-validation/src/index.html -->
+<!-- https://laurilugo.github.io/PROYECTO1-card-validation/src/index.html -->
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>Hello</header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Card Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <br>
+      <h2> Valida tu tarjeta de crédito</h2>
+      <p>Verifica aquí si tu tarjeta de crédito está activa o es válida:</p>
+      <img src="/cardicon.png" alt="Icon Credit Card">
+      <form class="texto">
+        <label>Nombre que aparece en la tarjeta *</label><br>
+        <input class="caja" type="text" name="name" value=""><br><br>
+        <label>Número de la tarjeta de crédito *</label><br>
+        <input id="numberCard" class="caja" type="number" name="number" value=""><br><br>
+        <label>Caducidad *</label><label id="cvc">CVC *</label><br>
+        <input class="cajita" type="month" name="exp" value="">
+        <input id='cajitacvc' class="cajita" type="number" minlength="3" min="100" maxlength="3" max="999" name="cvc"
+          value="" /><br>
+        <h5>* Estos campos son obligatorios</h5>
+        <button class="boton">Cancelar</button>
+        <button id="aceptar">Aceptar</button>
+      </form>
+      <br>
+      <br>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

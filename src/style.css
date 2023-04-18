@@ -1,0 +1,81 @@
+body {
+  background-color: #A3A2A7;
+  text-align: center
+}
+
+img {
+  margin-top: 10px;
+  width: 150px;
+  height: 120px;
+}
+
+.continue {
+  background-color: white;
+}
+
+.container {
+  height: auto;
+  margin: 0 auto;
+  margin-top: 120px;
+  border-radius: 6%;
+  background-color: white;
+  width: 650px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:small;
+  padding-top: 27px;
+}
+
+.texto {
+  margin-top: 25px;
+  text-align: left;
+  padding-left: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caja {
+  width: 555px;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 4px;
+  border-width: 1px;
+  border-color: gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90%;
+}
+
+#cvc {
+  margin-left: 238px;
+}
+
+.cajita {
+  width: 220px;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 4px;
+  border-width: 1px;
+  border-color: gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 90%;
+}
+
+#cajitacvc {
+  margin-left: 100px;
+}
+
+.boton {
+  margin-left: 395px;
+  border-radius: 20px;
+  border-width: 0px;
+  padding: 9px 14px;
+}
+
+#aceptar {
+  margin-left: 5px;
+  border-radius: 20px;
+  border-width: 0px;
+  padding: 9px 14px;
+
+  background-color: rosybrown;
+}
