@@ -20,10 +20,10 @@
         <label>Nombre que aparece en la tarjeta *</label><br>
         <input class="caja" type="text" name="name" value=""><br><br>
         <label>Número de la tarjeta de crédito *</label><br>
-        <input id="numberCard" class="caja" type="number" name="number" value=""><br><br>
+        <input id="numberCard" oninput="mascara()" class="caja" type="number" name="number" value=""><br><br>
         <label>Caducidad *</label><label id="cvc">CVC *</label><br>
         <input class="cajita" type="month" name="exp" value="">
-        <input id='cajitacvc' class="cajita" type="number" minlength="3" min="100" maxlength="3" max="999" name="cvc"
+        <input id="cajitacvc" class="cajita" type="number" minlength="3" min="100" maxlength="3" max="999" name="cvc"
           value="" /><br>
         <h5>* Estos campos son obligatorios</h5>
         <button class="boton">Cancelar</button>
