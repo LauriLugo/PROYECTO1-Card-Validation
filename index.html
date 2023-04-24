@@ -13,20 +13,30 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background-image: url("src/fondo.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     button {
       padding: 10px 20px;
+      margin-left: 5px;
+      border-radius: 20px;
+      border-width: 0px;
+      background-color: rgb(162, 153, 153);
     }
   </style>
 </head>
 
 <body class="continue">
   <main>
-    <p>Elegiste crédito como medio de pago</p>
-    <p>Para continuar con tu transacción ingresa los datos de tu tarjeta de crédito</p>
-    <br>
-    <button onclick="window.location.href='src/index.html'">Siguiente</button>
+    <div class="recuadro">
+      <p>Elegiste crédito como medio de pago</p>
+      <p>Para continuar con tu transacción ingresa los datos de tu tarjeta de crédito</p>
+      <br>
+      <button onclick="window.location.href='src/index.html'">Siguiente</button>
+    </div>
   </main>
 </body>
 
