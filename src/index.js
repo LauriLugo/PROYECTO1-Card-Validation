@@ -1,9 +1,12 @@
+// LO QUE ESTÁ EN ESTE ARCHIVO INDEX.JS ES LO QUE SE VE EN LA PANTALLA
 import validator from './validator.js';
 
 // console.log(validator);
 
 // validator.isValid()
 // validator.maskify()
+
+// La siguiente línea 
 const entradaTarjeta = document.getElementById("numberCard");
 entradaTarjeta.addEventListener("input", validarYEnmascarar);
 

@@ -1,8 +1,8 @@
+// TODA LA LÓGICA VA EN ESTE ARCHIVO VALIDATOR.JS
 const validator = {
   isValid: function (creditCardNumber) {
-    // console.log('Voy a validar la siguiente tarjeta:' + creditCardNumber)
     //CODIGO QUE VALIDA
-    //Tomamos el nuemro y lo convertimos en un array
+    //Tomo el número y lo convierto en un array
     const arrNumOriginal = creditCardNumber.toString().split("");
     // console.log(`arrNumOriginal: ${arrNumOriginal}`);
     //Reversa del número
