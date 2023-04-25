@@ -40,13 +40,16 @@ const validator = {
         arrSumaLosDigitos[index] = sumaDigitos10; // Se reemplaza el valor original por la suma de sus dígitos.
       }
     }
-    //5. Suma de los dígitos finales
-    let sumaDigitosFinales = 0;
+    //5. Suma de los dígitos finales. El siguiente fragmento de código suma los elementos del array "arrSumaLosDigitos"
+    let sumaDigitosFinales = 0; // La variable "sumaDigitosFinales" se inicia en 0:
+    // En la siguiente línea se recorre cada elemento de la lista "arrSumaLosDigitos" utilizando el for of:
     for (const digito of arrSumaLosDigitos) {
+      // En cada iteración del bucle, se toma el valor del elemento actual (llamado "digito") y se convierte en un número utilizando la función "Number()". *ESTE*
+      //Se convierte el elemento a un número utilizando la función "Number()" y se le asigna a la variable "digito".*O ESTE*
       sumaDigitosFinales = sumaDigitosFinales + Number(digito);
     }
-    // console.log(`sumaDigitosFinales: ${sumaDigitosFinales}`);
     //El número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
+    //Se suma "digito" a la variable "sumaDigitosFinales".
     if (sumaDigitosFinales % 10 === 0) {
       // console.log("Si es Válido");
       return true;
@@ -54,6 +57,7 @@ const validator = {
       return false;
       // console.log("No es Válido");
     }
+    //Después de sumar todos los dígitos, se verifica si la suma final es divisible por 10 (es decir, si su residuo es 0). Si es así, se devuelve "true", lo que indica que el número de tarjeta de crédito es válido según el algoritmo de Luhn. Si no es así, se devuelve "false".
   },
 
 

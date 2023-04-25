@@ -18,13 +18,12 @@
       <img src="../cardicon.png" alt="Icon Credit Card">
       <form class="texto">
         <label>Nombre que aparece en la tarjeta *</label><br>
-        <input class="caja" type="text" name="name" value=""><br><br>
+        <input id="noVacio" class="caja" type="text" name="name" value=""><br><br>
         <label>Número de la tarjeta de crédito *</label><br>
-        <input id="numberCard" class="caja" type="text" name="number" value=""><br><br>
+        <input id="numberCard" class="caja" type="text" maxlength="16" name="number"><br><br>
         <label>Caducidad *</label><label id="cvc">CVC *</label><br>
         <input class="cajita" type="month" name="exp" value="">
-        <input id="cajitacvc" class="cajita" type="number" minlength="3" min="100" maxlength="3" max="999" name="cvc"
-          value="" /><br>
+        <input id="cajitacvc" class="cajita" type="number" min="100" maxlength="3" max="999" name="cvc"/><br>
         <h5>* Estos campos son obligatorios</h5>
         <button class="boton">Cancelar</button>
         <button id="aceptar">Aceptar</button>
