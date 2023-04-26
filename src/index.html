@@ -23,7 +23,7 @@
         <input id="numberCard" class="caja" type="text" maxlength="16" name="number"><br><br>
         <label>Caducidad *</label><label id="cvc">CVC *</label><br>
         <input id="caducidad" class="cajita" type="month" name="exp" value="">
-        <input id="cajitacvc" class="cajita" type="number" min="100" maxlength="3" max="999" name="cvc"/><br>
+        <input id="cajitacvc" class="cajita" type="number" min="100" maxlength="3" max="999" name="cvc" /><br>
         <h5>* Estos campos son obligatorios</h5>
         <button class="boton">Cancelar</button>
         <button id="aceptar">Aceptar</button>
@@ -31,6 +31,14 @@
       <br>
       <br>
     </div>
+    <div id="modal-tarjeta" class="modal-tarjeta">
+      <div class="modal-tarjeta-contenido">
+        <span class="cerrar-modal-tarjeta">&times;</span>
+        <p id="mensaje-tarjeta"></p>
+      </div>
+    </div>
+
+
   </main>
   <footer></footer>
   <script src="index.js" type="module"></script>

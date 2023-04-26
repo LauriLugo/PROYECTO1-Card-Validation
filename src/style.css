@@ -91,3 +91,40 @@ img {
   padding: 9px 14px;
   background-color: rosybrown;
 }
+.modal-tarjeta {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  }
+
+.modal-tarjeta-contenido {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 50px;
+  height: 70px;
+  width: 20%;
+  border-radius: 40px;
+
+
+}
+
+.cerrar-modal-tarjeta {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar-modal-tarjeta:hover,
+.cerrar-modal-tarjeta:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

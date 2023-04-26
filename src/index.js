@@ -54,22 +54,44 @@ function validarNumero(evento) {
     alert('Todos los campos deben ser diligenciados');
   } else {
     if (validator.isValid(numeroTarjetaInterno)) { //si el número de tarjeta es válido
-      alert("La tarjeta es válida")//entonces que salga un aviso
-    } else { // y si no
-      alert("La tarjeta no es válida") //entonces
+      var modalTarjeta = document.getElementById("modal-tarjeta")
+      var mensajeTarjeta = document.getElementById("mensaje-tarjeta");
+      var cerrarModalTarjeta = document.getElementsByClassName("cerrar-modal-tarjeta")[0];
+
+      mensajeTarjeta.innerHTML = "La tarjeta es válida";
+      modalTarjeta.style.display = "block";
+
+      cerrarModalTarjeta.onclick = function () {
+        modalTarjeta.style.display = "none";
+      }
+      window.onclick = function (event) {
+        if (event.target == modalTarjeta) {
+          modalTarjeta.style.display = "none";
+        }
+      }
+    } else {
+      var modalTarjeta = document.getElementById("modal-tarjeta");
+      var mensajeTarjeta = document.getElementById("mensaje-tarjeta");
+      var cerrarModalTarjeta = document.getElementsByClassName("cerrar-modal-tarjeta")[0];
+
+      mensajeTarjeta.innerHTML = "La tarjeta no es válida";
+      modalTarjeta.style.display = "block";
+
+      cerrarModalTarjeta.onclick = function () {
+        modalTarjeta.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modalTarjeta) {
+          modalTarjeta.style.display = "none";
+        }
+      }
     }
   }
+
 }
-//PARA LIMITAR LOS NUMEROS EN EL CAMPO DE LA TARJETA
-const numeroCardInput = document.getElementById("numberCard");//Aquí "capturé" el espacio de 'numberCard'
-numeroCardInput.addEventListener("input", limitadorCard); //se escucha el input y se ejecuta el limitador
-function limitadorCard() {
-  if (numnumeroCardInputeroInput.value.length <= 16) { //si el número input es mas largo que 16
-    numeroCardInput.value = numeroCardInput.value.slice(0, 16); // entonces el valor del número input es igual al 3 números
-  }
-}//PARA LIMITAR LOS NUMEROS EN EL CVC
 
-
+//PARA LIMITAR LOS NUMEROS EN EL CVC
 const numeroInput = document.getElementById("cajitacvc");//Aquí "capturé" el espacio de CVC
 numeroInput.addEventListener("input", limitador); //se escucha el input y se ejecuta el limitador
 function limitador() {
