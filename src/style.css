@@ -16,7 +16,7 @@ img {
 }
 
 .recuadro {
-  height: auto;
+  height: 150px;
   margin: 0 auto;
   border-radius: 30px;
   background-color: white;
@@ -24,6 +24,12 @@ img {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller;
   padding-block: 27px;
+  padding-top: 47px;
+}
+
+.siguiente {
+  margin-top: 5px;
+  background-color: rosybrown;
 }
 
 .container {
