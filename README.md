@@ -41,7 +41,6 @@ Respecto a la experiencia del usuario, se implementaron dos pantallas:
 
 ![image](https://user-images.githubusercontent.com/129604876/234463353-ab09c148-8309-4ece-b701-5a340905ee2f.png)
 
-***
 
 La implementación de las pantallas, de las explicaciones, mensajes, colores y demás características, fueron diseñadas buscando crear un espacio ameno y visualmente atractivo para los usuarios. En ningún momento durante el desarrollo de esta aplicación se usaron librerías o frameworks, todo se elaboró completamente en JavaScript puro.
 
