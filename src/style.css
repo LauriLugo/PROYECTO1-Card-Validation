@@ -16,12 +16,14 @@ img {
 }
 
 .recuadro {
+  height: auto;
+  margin: 0 auto;
+  border-radius: 30px;
   background-color: white;
-  width: 590px;
+  width: 570px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small;
-  padding: 27px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size:smaller;
+  padding-block: 27px;
 }
 
 .container {
@@ -32,7 +34,7 @@ img {
   background-color: white;
   width: 650px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: small;
+  font-size: smaller;
   padding-top: 27px;
 }
 
