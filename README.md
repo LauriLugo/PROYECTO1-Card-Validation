@@ -5,7 +5,8 @@
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
 * [2. Definición del producto](#2-definición-del-producto)
 * [3. Consideraciones generales](#3-consideraciones-generales)
-* [4. Conclusiones](#4-conclusiones)
+* [4. Prototipo web](#4-prototipo-web)
+* [5. Conclusiones](#5-conclusiones) 
 
 
 ***
@@ -29,9 +30,9 @@ El objetivo general de esta población es adquirir el perfume de su interés a t
 ***
 
 Respecto a la experiencia del usuario, se implementaron dos pantallas: 
-1. Pantalla inicial:  en la que se evidencia una imagen de fondo con temática ecommerce tomada de [dribbble.com](https://dribbble.com/shots/5408295-Beauty-Shop-Product-Details-Page), una ventana con el mensaje `"Elegiste crédito como medio de pago"` `"Para continuar con tu transacción ingresa los datos de tu tarjeta de crédito"` y el botón `'siguiente'` que lleva a la validación (segunda pantalla):
+1. Pantalla inicial:  en la que se evidencia una imagen de fondo con temática ecommerce tomada de [dribbble.com](https://dribbble.com/shots/5408295-Beauty-Shop-Product-Details-Page), una ventana con el mensaje `"Elegiste crédito como medio de pago"` `"Ingresa los datos de tu tarjeta de crédito para continuar con la transacción"` y el botón `'siguiente'` que lleva a la validación (segunda pantalla):
 
-![image](https://user-images.githubusercontent.com/129604876/234459035-d1766d6f-a88f-47a2-8165-e0d9b17e0c99.png)
+![image](https://user-images.githubusercontent.com/129604876/235007499-52a1c5a2-44a0-4e30-b917-b391143afcf1.png)
 
 2. Segunda pantalla: la imagen de fondo permanece pero una nueva ventana aparece; en esta, el usuario deberá diligenciar cada uno de los campos de acuerdo a la información de su trajeta de crédito:
 
@@ -39,7 +40,7 @@ Respecto a la experiencia del usuario, se implementaron dos pantallas:
 
 3. Al hacer clic en el botón `'aceptar'` aparecerá una ventana que indica si la tarjeta de crédito es o no válida para realizar la compra:
 
-![image](https://user-images.githubusercontent.com/129604876/234463353-ab09c148-8309-4ece-b701-5a340905ee2f.png)
+![image](https://user-images.githubusercontent.com/129604876/235009360-83538104-9cd3-4393-a762-7bed1a034747.png)
 
 
 La implementación de las pantallas, de las explicaciones, mensajes, colores y demás características, fueron diseñadas buscando crear un espacio ameno y visualmente atractivo para los usuarios. En ningún momento durante el desarrollo de esta aplicación se usaron librerías o frameworks, todo se elaboró completamente en JavaScript puro.
@@ -54,7 +55,15 @@ En esta aplicación web se ejecutan diferentes funcionalidades:
 
 Para el desarrollo de este proyecto se trabajó en los fundamentos de JavaScript, incluyendo conceptos como variables, condicionales, y funciones, así como eventos y manipulación básica del DOM, fundamentos de HTML y CSS. 
 
-## 4. Conclusiones
+## 4. Prototipo web
+
+En la etapa inicial de este proyecto se elaboró un boceto o prototipo con el objetivo de crear una referencia visual de la estructura de la página web a realizar, en esta se buscó definir al detalle el contenido y su distribución visual:
+
+![image](https://user-images.githubusercontent.com/129604876/235010338-44bdf3ff-c72a-41a5-8794-bc347c80794d.png)
+
+Este prototipo digital fue desarrollado en la aplicación [figma.com]([http://localhost/](https://www.figma.com/file/kavvEYjK6ASLT2ktORsA4S/PROTOTIPO%E2%9C%A8%7C-Valid-Credit-Card?type=design&node-id=6%3A2&t=fMRa2KhWiP6EoLHR-1)).
+
+## 5. Conclusiones
 
 * Se trabajó en base a un boilerplate, la estructura básica de un proyecto en distintas carpetas (a través modulos en JS).
 * Se conocieron las herramientas de mantenimiento y mejora del código (linters y pruebas unitarias).
