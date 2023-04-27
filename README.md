@@ -61,7 +61,7 @@ En la etapa inicial de este proyecto se elaboró un boceto o prototipo con el ob
 
 ![image](https://user-images.githubusercontent.com/129604876/235010338-44bdf3ff-c72a-41a5-8794-bc347c80794d.png)
 
-Este prototipo digital fue desarrollado en la aplicación [figma.com]([https://dribbble.com/shots/5408295-Beauty-Shop-Product-Details-Page](http://localhost/](https://www.figma.com/file/kavvEYjK6ASLT2ktORsA4S/PROTOTIPO%E2%9C%A8%7C-Valid-Credit-Card?type=design&node-id=6%3A2&t=fMRa2KhWiP6EoLHR-1))
+Este prototipo digital fue desarrollado en la aplicación [figma.com](https://www.figma.com/file/kavvEYjK6ASLT2ktORsA4S/PROTOTIPO%E2%9C%A8%7C-Valid-Credit-Card?type=design&node-id=6%3A2&t=gWyYNDvWdeGUlzUZ-1).
 
 ## 5. Conclusiones
 
