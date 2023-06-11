@@ -17,7 +17,7 @@ Para este proyecto se elaboró una aplicación web que permite a un usuario vali
 
 En el desarrollo de esta validación se implementó el [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn), también llamado algoritmo de módulo 10, el cual es un método de suma de verificación; este se utiliza para validar números de identificación; tales como el IMEI de los celulares, tarjetas de crédito, etc.
 
-Su desarrollo es simple: obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9]); luego, a todos los números que ocupan una posición par se les multiplica por dos; si este número es mayor o igual a 10, debemos sumar los dígitos del resultado. Finalmente el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
+Su desarrollo es simple: obtenemos la reversa del número a verificar (que solamente contiene dígitos [0-9]); luego, a todos los números que ocupan una posición par se les multiplica por dos; si este número es mayor o igual a 10, debemos sumar los dígitos del resultado. Finalmente, el número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
 ![gráfica de algoritmo de Luhn](https://user-images.githubusercontent.com/12631491/217016579-865679e0-0949-4afd-b13f-d2ebba7a0c54.png)
 
@@ -34,7 +34,7 @@ Respecto a la experiencia del usuario, se implementaron dos pantallas:
 
 ![image](https://user-images.githubusercontent.com/129604876/235007499-52a1c5a2-44a0-4e30-b917-b391143afcf1.png)
 
-2. Segunda pantalla: la imagen de fondo permanece pero una nueva ventana aparece; en esta, el usuario deberá diligenciar cada uno de los campos de acuerdo a la información de su trajeta de crédito:
+2. Segunda pantalla: la imagen de fondo permanece pero una nueva ventana aparece; en esta, el usuario deberá diligenciar cada uno de los campos de acuerdo a la información de su tarjeta de crédito:
 
 ![image](https://user-images.githubusercontent.com/129604876/234461954-09873573-54b9-4d84-a5df-dc70452f8f55.png)
 
@@ -49,7 +49,7 @@ La implementación de las pantallas, de las explicaciones, mensajes, colores y d
 
 En esta aplicación web se ejecutan diferentes funcionalidades:
 * La interfaz desarrollada permite al usuario insertar un numero (texto) a validar usando solo caracteres numéricos (dígitos) [0-9].  
-* La interfaz desarrollada permite al usuario ocultar todos los dígitos del número de tarjeta a exepción de los últimos 4 caracteres.  
+* La interfaz desarrollada permite al usuario ocultar todos los dígitos del número de tarjeta a excepción de los últimos 4 caracteres.  
 * La interfaz desarrollada permite al usuario conocer si el resultado es válido o no.  
 * La interfaz desarrollada no permite al usuario poder ingresar un campo vacío.  
 
@@ -65,7 +65,7 @@ Este prototipo digital fue desarrollado en la aplicación [figma.com](https://ww
 
 ## 5. Conclusiones
 
-* Se trabajó en base a un boilerplate, la estructura básica de un proyecto en distintas carpetas (a través modulos en JS).
+* Se trabajó en base a un boilerplate, la estructura básica de un proyecto en distintas carpetas (a través módulos en JS).
 * Se conocieron las herramientas de mantenimiento y mejora del código (linters y pruebas unitarias).
 * Se aprendió sobre objetos, estructuras, métodos e iteración (bucles) en JavaScript.
 * Se implementó control de versiones con git (y la plataforma github).
