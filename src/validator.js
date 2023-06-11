@@ -6,21 +6,20 @@ const validator = {
     //1. Tomo el número original (creditCardNumber) y lo convierto en un array o lista con las funciones .toString().split(""); (ese resultado se llamará "arrNumOriginal")
     const arrNumOriginal = creditCardNumber.toString().split("");
     //2. Reversa del número. Tomo la lista ("arrNumOriginal") y le doy reversa a los números con la función .reverse(): (ese resultado se llamará "arrNumReversa")
-    console.log (arrNumOriginal)
     const arrNumReversa = arrNumOriginal.reverse();
     //3. Doblar cada segundo dígito. 
     // Para esto hago una copia de la lista "arrNumReversa" con [...], lo cual me ayuda a editar la copia sin que se altere la original. Esta copia se llamará "arrNumDoble"
     const arrNumDoble = [...arrNumReversa];
-     //luego, para doblar cada segundo dígito, tomo los números que ocupan una posición par (con 'let index') y aplico la operación:
-     //el index (posición) es < la logitud de la lista "arrNumDoble" + 1 (Se suma uno al index para revisar la posicion real)
-     // y esto se ubica dentro de un for para que haga la misma operación hasta la longitud de la lista (arrNumDoble) y no se convierta en un bucle infinito
+    //luego, para doblar cada segundo dígito, tomo los números que ocupan una posición par (con 'let index') y aplico la operación:
+    //el index (posición) es < la logitud de la lista "arrNumDoble" + 1 (Se suma uno al index para revisar la posicion real)
+    // y esto se ubica dentro de un for para que haga la misma operación hasta la longitud de la lista (arrNumDoble) y no se convierta en un bucle infinito
     for (let index = 0; index < arrNumDoble.length; index++) {
       //El for recorre la lista arrNumDoble, comienza en el índice o posición 0 de la lista y se ejecuta mientras el índice sea menor que la longitud de la lista 'arrNumDoble' 
       //Dentro del bucle se pone la declaración if que comprueba si el valor de "index + 1" es un número par; si es así se ejecutará el bloque de código dentro del if.
       if ((index + 1) % 2 === 0) {
         //En el bloque de código del "if", el valor del elemento actual del array se multiplica por 2 y se almacena en el mismo elemento del array.
         //Se usa el módulo o residuo de 2. Si es igual a cero quiere decir que es par.
-        arrNumDoble[index] = arrNumDoble[index] * 2; 
+        arrNumDoble[index] = arrNumDoble[index] * 2;
         // Finalmente se multiplica por 2 el número en el index que cumpla la condición if.
       }
     }
@@ -51,23 +50,19 @@ const validator = {
     //El número a verificar será válido si la suma de sus dígitos finales es un múltiplo de 10.
     //Se suma "digito" a la variable "sumaDigitosFinales".
     if (sumaDigitosFinales % 10 === 0) {
-      // console.log("Si es Válido");
       return true;
     } else {
       return false;
-      // console.log("No es Válido");
     }
     //Después de sumar todos los dígitos, se verifica si la suma final es divisible por 10 (es decir, si su residuo es 0). Si es así, se devuelve "true", lo que indica que el número de tarjeta de crédito es válido según el algoritmo de Luhn. Si no es así, se devuelve "false".
   },
 
 
   maskify: function (creditCardNumber) {
-    // console.log('Voy a enmascarar los números de esta tarjeta:' + creditCardNumber)
     //CODIGO QUE ENMASCARA
     // let num = 'helloworld';
-    //Tomamos el nuemro y lo convertimos en un array
+    //Tomamos el número y lo convertimos en un array
     const arrNumOriginal = creditCardNumber.toString().split("");
-    // console.log(`arrNumOriginal: ${arrNumOriginal}`);
     const arrResultado = [...arrNumOriginal];
     //Ocultar valores
     if (arrResultado.length > 4) {
@@ -78,7 +73,6 @@ const validator = {
       }
     }
     const resultado = arrResultado.join("");
-    // console.log(`resultado: ${resultado}`);
     return resultado
   }
 };
